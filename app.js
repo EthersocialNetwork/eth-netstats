@@ -55,7 +55,7 @@ catch (e)
 	}
 }
 var banned = config.banned;
-var reserved = config.reserved;
+var reserved = config.reserved || [];
 
 // Init http server
 if( process.env.NODE_ENV !== 'production' )
